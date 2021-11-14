@@ -109,7 +109,7 @@
     width: 50px;
     height: 35px;
     position: absolute;
-    background-image: url(../img/bgicon.png);
+    background-image: url(/img/bgicon.png);
 }
 
 
@@ -149,7 +149,7 @@
 .nav .search-shopcart-order .shopcart-order button:nth-child(1) {
     background-color: #ff6700;
     color: #ccc;
-    background-image: url(../img/bgicon.png);
+    background-image: url(/img/bgicon.png);
     background-position: -5px -44px;
 }
 
@@ -290,7 +290,7 @@
 }
 
 
-/*4.今日推介*/
+/*4.今日推荐*/
 
 .recommend {
     height: 540px;
@@ -315,6 +315,7 @@
     width: 1190px;
     height: 498px;
     margin: 0 auto;
+    background-color: #ff6709;
 }
 
 
@@ -483,9 +484,9 @@
     background-color: #ccc;
 }
 
-.ebooks .left-box .content .ebooks-list ul li {
+.ebooks .left-box .content .ebooks-list > ul > li {
     float: left;
-    height: 222px;
+    height: 223px;
     width: 165px;
     background-color: #fff;
     margin-left: 2px;
@@ -493,34 +494,38 @@
     text-align: center;
 }
 
-.ebooks .left-box .content .ebooks-list ul li p {
+.ebooks .left-box .content .ebooks-list > ul > li > p {
     text-align-last: left;
     text-indent: 10px;
 }
 
-.ebooks .left-box .content .ebooks-list ul li p:first-child {
+.ebooks .left-box .content .ebooks-list > ul > li > p:first-child {
     font-size: 18px;
 }
 
-.ebooks .left-box .content .ebooks-list ul li img {
+.ebooks .left-box .content .ebooks-list > ul > li > img {
     margin: 15px auto;
 }
 
-.ebooks .left-box .content .ebooks-list ul li p:not(:first-child) {
+.ebooks .left-box .content .ebooks-list > ul > li > p:not(:first-child) {
     color: red;
 }
 
-.ebooks .left-box .content .ebooks-list ul li p:last-child {
-    font-size: 14px;
+.ebooks .left-box .content .ebooks-list > ul > li > p:last-child {
+    font-size: 18px;
 }
-
-.ebooks .left-box .content .ebooks-list ul li:not(:first-child) {}
-
 
 /* 一个特别的li 将来的轮播容器*/
 
 .ebooks .left-box .content .ebooks-list ul li:first-child {
     width: 332px;
+    height: 223px;
+    background-color: green;
+}
+.ebooks .left-box .content .ebooks-list ul li:first-child .pptbox {
+    width: 332px;
+    height: 223px;
+    background-color: pink;
 }
 
 
@@ -549,22 +554,27 @@
     font-size: 16px;
     text-indent: 5px;
 }
+.ebooks .right-box ul li .desc img {
+    margin-right: 9px;
+}
+/* 新书列表交互相关样式*/
 
 .ebooks .right-box ul li .desc {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     height: 150px;
     color: #333;
-    /* 隐藏 */
+    /* 隐藏:详情默认所有都是隐藏的 只有第一个显示*/
+    display: none;
+}
+.ebooks .right-box ul li:first-child .ebooks-title{
+    /*默认所有标题都显示，只有第一个隐藏*/
     display: none;
 }
 
-.ebooks .right-box ul li:first-child p:nth-child(1) {
-    display: none;
-}
-
-.ebooks .right-box ul li .desc.active {
-    display: block;
+.ebooks .right-box ul li:first-child .desc{
+     /*默认第一个显示详情*/
+     display: block;
 }
 
 
