@@ -45,7 +45,7 @@ img {
     width: 100px;
     height: 100px;
     position: absolute;
-    background-image: url('../插件/放大镜插件/images/move-box.png');
+    background-image: url('../../icons/move-box.png');
 }
 
 .images-cover {

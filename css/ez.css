@@ -99,7 +99,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-image: url('../ch2/img/bgicon.png');
+    background-image: url('../img/bgicon.png');
 }
 
 
@@ -143,7 +143,7 @@
 .nav .search-shopcart-order .showcart-order button:nth-child(1) {
     background-color: #ff6700;
     color: #fff;
-    background-image: url('../ch2/img/bgicon.png');
+    background-image: url('../img/bgicon.png');
     background-position: -6px -44px;
 }
 
@@ -231,7 +231,7 @@
 .hot .hot-sell h3 {
     height: 30px;
     width: 195px;
-    background-color: #ff6700;
+    background-color: rgb(2, 248, 166);
     padding-left: 5px;
     line-height: 30px;
     font-size: 15px;
@@ -505,21 +505,39 @@
     font-weight: 500;
 }
 
-.guess-you-like-content {
-    width: 1200px;
-    height: 500px;
-    /* background-color: antiquewhite; */
-}
+
+/* 上下滑动 */
 
 .out-box {
     overflow: hidden;
 }
 
 .guess-you-like-content .inner-box {
-    height: 1600px;
+    height: 1500px;
     position: relative;
     top: 0;
 }
+
+.guess-you-like-content {
+    width: 1200px;
+    height: 500px;
+    /* 左右滑动需要元素 */
+    /* float: left; */
+}
+
+
+/* 左右滑动 */
+
+
+/* .out-box {
+    overflow: hidden;
+}
+
+.guess-you-like-content .inner-box {
+    width: 4800px;
+    position: relative;
+    left: 0;
+} */
 
 .guess-you-like-content ul li {
     width: 200px;
