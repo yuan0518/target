@@ -77,36 +77,36 @@ $(function() {
     // 换一批
     // 定义一个索引
     // 上下滑动
-    var index = 0;
-    $('.change').click(function() {
-        // 自
-        index++;
-        // 边界判断
-        index = index > 2 ? 0 : index;
-        // 让里面的inner-box自己动
-        $('.inner-box').animate({
-            top: -index * 500
-        })
-    })
-
-    // 左右滑动
     // var index = 0;
     // $('.change').click(function() {
-    //     // 自增
+    //     // 自
     //     index++;
-    //     console.log(index)
-    //         // 边界判断
-    //         // index = index > 3 ? 0 : index;
-    //         // 让里面的inner-box自己动
-    //     $('.inner-box').stop(true).animate({
-    //         left: -index * 1200
-    //     }, function() {
-    //         // console.log('2', index)
-    //         if (index === 3) {
-    //             index = 0;
-    //             $('.inner-box').css('left', 0);
-    //         }
+    //     // 边界判断
+    //     index = index > 2 ? 0 : index;
+    //     // 让里面的inner-box自己动
+    //     $('.inner-box').animate({
+    //         top: -index * 500
     //     })
-
     // })
+
+    // 左右滑动
+    var index = 0;
+    $('.change').click(function() {
+        // 自增
+        index++;
+        console.log(index)
+            // 边界判断
+            // index = index > 3 ? 0 : index;
+            // 让里面的inner-box自己动
+        $('.inner-box').stop(true).animate({
+            left: -index * 1200
+        }, function() {
+            // console.log('2', index)
+            if (index === 3) {
+                index = 0;
+                $('.inner-box').css('left', 0);
+            }
+        })
+
+    })
 })

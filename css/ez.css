@@ -508,7 +508,7 @@
 
 /* 上下滑动 */
 
-.out-box {
+/* .out-box {
     overflow: hidden;
 }
 
@@ -516,7 +516,7 @@
     height: 1500px;
     position: relative;
     top: 0;
-}
+} */
 
 .guess-you-like-content {
     width: 1200px;
@@ -525,11 +525,8 @@
     /* float: left; */
 }
 
-
 /* 左右滑动 */
-
-
-/* .out-box {
+.out-box {
     overflow: hidden;
 }
 
@@ -537,7 +534,7 @@
     width: 4800px;
     position: relative;
     left: 0;
-} */
+}
 
 .guess-you-like-content ul li {
     width: 200px;
@@ -557,7 +554,6 @@
     text-indent: 10px;
     font-size: 14px;
 }
-
 
 /* 11.=================尾部================= */
 
